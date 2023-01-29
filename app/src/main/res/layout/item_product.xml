@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="5dp"
+    android:id="@+id/cardProduct"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/productImage"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="160dp"
+            android:layout_height="150dp"/>
+        <TextView
+            android:id="@+id/productName"
+            android:textColor="@color/black"
+            android:text="So Klin Pewangi"
+            android:layout_below="@+id/productImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/productDiscount"
+            android:textColor="@color/red"
+            android:text="Diskon 2rb"
+            android:layout_below="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/productPrice"
+            android:textColor="@color/black"
+            android:text="Rp 10.500"
+            android:textStyle="bold"
+            android:layout_below="@+id/productDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
